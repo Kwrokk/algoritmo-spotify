@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        }
+    .gradient{
+        width: auto;
+        height: 100vh;
+        text-align: center;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to right,#152e19, #27552e,#29752d);
+        background-size: 500% 100%;
+        animation: fundo 3s infinite alternate;
+    }
+    @keyframes fundo{
+        0% {
+            background-position-x: 0%;
+          }
+          100% {
+            background-position: 100%;
+          }
+        }
+    #ctela{
+        position: relative;
+        margin-top: 400px;
+        align-self: center;
+    }
+    
+    </style>
+       <script>
+        document.addEventListener('click', function() {
+            window.location.href = "pag3.html";
+        });
+    </script>     
+</head>
+<body>
+    <div class="gradient">
+        <img src="texto2.png" height="auto" width="1800">
+        <div id="ctela"><p>Clique na tela </p></div>
+ </div>
+</body>
+</html>
